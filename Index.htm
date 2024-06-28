@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>The World of Bees</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8E1;
+            color: #333;
+        }
+
+        #wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #FFA000;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+         ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+         li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+         a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #content {
+            flex: 2;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        aside {
+            flex: 1;
+            background-color: #FFE082;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #FFA000;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .highlight {
+            font-style: italic;
+            color: #FF6F00;
+        }
+
+        ul.bee-facts {
+            padding-left: 20px;
+        }
+
+        ul.bee-facts li {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #FFE082;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #FFA000;
+            color: #FFFFFF;
+        }
+
+        tr:nth-child(even) {
+            background-color: #FFF8E1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 48%;
+            border-radius: 10px;
+        }
+
+        #honey-bee {
+            border: 3px solid #FFA000;
+        }
+
+        #beekeeper {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #FFA000;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        a:link {
+            color: #FFA000;
+        }
+
+        a:visited {
+            color: #FF6F00;
+        }
+
+        a:hover {
+            color: #FFB300;
+        }
+
+        a:active {
+            color: #FF8F00;
+        }
+		.bold-text {
+    font-weight: bold;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>The World of Bees</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#facts">Bee Facts</a></li>
+                    <li><a href="#species">Species</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="content">
+                <h2 id="about">About Bees</h2>
+               <p>Bees are fascinating insects that play a crucial role in our ecosystem. They are known for their <span class="highlight">incredible pollination abilities</span> and their production of honey. <span class="bold-text">Bees have been around for millions of years</span> and have evolved alongside flowering plants. <span class="underline-text">Their importance to our environment cannot be overstated.</span></p>
+                <h2 id="facts">Interesting Bee Facts</h2>
+                <ul class="bee-facts">
+                    <li>A honey bee visits 50 to 100 flowers during a collection trip.</li>
+                    <li>Bees have five eyes - two large compound eyes and three small simple eyes.</li>
+                    <li>The average bee only lives for 4-6 weeks during the busy summer season.</li>
+                    <li>Bees communicate with each other by dancing and by using pheromones.</li>
+                </ul>
+                <h2 id="species">Bee Species</h2>
+                <table>
+                    <tr>
+                        <th>Species</th>
+                        <th>Habitat</th>
+                        <th>Honey Production</th>
+                    </tr>
+                    <tr>
+                        <td>Western Honey Bee</td>
+                        <td>Worldwide</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Bumble Bee</td>
+                        <td>Northern Hemisphere</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>Carpenter Bee</td>
+                        <td>Worldwide</td>
+                        <td>None</td>
+                    </tr>
+                </table>
+                <div class="image-container">
+                    <img id="honey-bee" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Apis_mellifera_Western_honey_bee.jpg" alt="Honey Bee">
+                    <img id="beekeeper" src="https://www.liveabout.com/thmb/7QSiP4M0qGBJgYIg5rPM2Ct0wcc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-104824410-58efa82f5f9b582c4d1c7de6.jpg">
+                </div>
+            </section>
+            <aside>
+                <h2>Why Bees Matter</h2>
+                <p>Bees are essential pollinators that help plants reproduce. They contribute to the pollination of approximately 75% of global crops, making them vital for food production and biodiversity.</p>
+                <p>Learn more about bee conservation at the <a href="https://thebeeconservancy.org/" target="_blank">The Bee Conservancy</a> website.</p> 
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; This site is authored and maintained by "DeMonika Adams." It is not an official website of the Maricopa County Community College District, and Maricopa is not responsible for the content of this site.</p>
+			<p> Source- 2024 The World of Bees | Images: Wikimedia Commons, LiveAbout.com </p>
+        </footer>
+    </div>
+</body>
+</html>
