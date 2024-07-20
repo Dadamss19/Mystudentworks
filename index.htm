@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+      <title>Forms</title>
+	  <link rel="stylesheet" href="style.css">
+	</head>
+	
+	
+   <body>
+   
+      <form method="post" action="formhandler.php"> 
+	  
+	  <h1>Monika's Pizza Order </h1>
+	  
+	  <label for="fname" >First Name</label>
+	  <input type="text" id="fname" name="fname"><br>
+	  
+	  <label for="lname" >Last Name</label>
+	  <input type="text" id="lname" name="lname"><br>
+	  
+	  
+	  <label for="password" >Password</label>
+	  <input type="password" id="password" name="password"><br>
+	  
+	  
+	  <label for="email" >Email Address</label>
+	  <input type="email" id="email" name="email"><br>
+	  
+	  <p>What size pizza would you like?<br>
+	  <input type="radio" id="small" name="size" value="small"><label for="small">Small</label>
+	   <input type="radio" id="medium" name="size" value="medium"><label for="medium">Medium</label>
+	    <input type="radio" id="large" name="size" value="large"><label for="large">Large</label>
+		 <input type="radio" id="xlarge" name="size" value="xlarge"><label for="xlarge">Extra Large</label>
+	    </p>
+		
+		<p>What topping would you like?<br>
+	<input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni"><label for="pepperoni">Pepperoni</label><br>
+ <input type="checkbox" id="sausage" name="sausage" value="sausage"><label for="sausage">Sausage</label><br>
+	 <input type="checkbox" id="extra_cheese" name="extra_cheese" value="extra_cheese"><label for="extra_cheese">Extra Cheese</label><br>	
+	 <input type="checkbox" id="pineapple" name="pineapple" value="pineapple"><label for="pineapple">Pineapple</label><br>	
+	 </p>
+		
+		<p>
+		<label for="drink">What drink would you like?</label><br>
+		<select id="drink" name="drink">
+		<option value="">Choose your drink:</option>
+		<option value="sprite">Sprite</option>
+		<option value="coca cola">Coca Cola</option>
+		<option value="root_beer">Root beer</option>
+		<option value="lemonade">Lemonade</option>
+		</select>
+		</p>
+		
+		<p>
+		<label for="instructions">Add delivery instructions:</label><br>
+		<textarea id="instructions" name="instructions" maxlength="200" placeholder="Type here..."></textarea>
+		</p>
+		
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date">
+		
+		<p>
+		<label for="color">What is your favorite color?</label><br>
+		<input type="color" id="color" name="color">
+		</p>
+		
+		
+		<p>
+		<label for="range">How much do you love pineapple on pizza?</label>
+		0<input type="range" id="range" name="range" min="0" max="100">100
+		</p>
+		
+		<p>
+		
+		<input type="button" onclick="alert('Oh no! You didnt follow directions!')" value="Don't press this button!"
+		
+		</p>
+		
+		
+	 <br><br>	 
+   <input type="submit"><input type="reset"> 
+	 </form>
+	 
+	 
+</body>
+	 
+</html>
